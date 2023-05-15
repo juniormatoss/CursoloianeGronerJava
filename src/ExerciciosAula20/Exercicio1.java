@@ -1,3 +1,5 @@
+package ExerciciosAula20;
+
 import java.util.Random;
 
 public class Exercicio1 {
@@ -6,8 +8,8 @@ public class Exercicio1 {
 
         Random numeroRandom = new Random();
 
-        for (int i = 0; i < numerosAleatorios.length; i++) {
-            for (int j = 0; i < m[i].length; j++) {
+        for (int i = 0; i <numerosAleatorios.length; i++) {
+            for (int j = 0; j < numerosAleatorios[i].length; j++) {
                 numerosAleatorios[i][j] = numeroRandom.nextInt(100);
 
             }
@@ -16,9 +18,9 @@ public class Exercicio1 {
         int linha = 0;
         int coluna = 0;
         for (int i = 0; i < numerosAleatorios.length; i++) {
-            for (int j = 0; i < m[i].length; j++) {
-                if (m[i][j] > maiorNumero) {
-                    maiorNumero = m[i][j];
+            for (int j = 0; j < numerosAleatorios[i].length; j++) {
+                if (numerosAleatorios[i][j] > maiorNumero) {
+                    maiorNumero = numerosAleatorios[i][j];
                     linha = i;
                     coluna = j;
                 }
