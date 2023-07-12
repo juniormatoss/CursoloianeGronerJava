@@ -3,10 +3,8 @@ import java.util.Scanner;
 
 public class Exercicio3 {
     public static void main(String[] args){
-
+        Scanner scan= new Scanner(System.in);
         int [][] M  = new int [3][3];
-
-        Scanner scan = new Scanner(System.in);
 
         for (int i = 0; i < M.length; i++){
             for(int j = 0; j < M[i].length; j++){
