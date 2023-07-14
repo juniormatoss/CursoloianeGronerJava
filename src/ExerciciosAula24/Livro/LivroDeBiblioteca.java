@@ -1,6 +1,6 @@
 package ExerciciosAula24.Livro;
 
-public class Ingles {
+public class LivroDeBiblioteca {
     public static void main(String [] args){
         Livro ingles = new Livro();
         ingles.nome = "Inglês básico";
