@@ -6,10 +6,15 @@ public class TesteCarro {
         Carro uno = new Carro();
 
         uno.marca = "fiat";
-        uno.modelo = "passeio";
+        uno.modelo = "uno mille";
         uno.numPassageiros = 5;
         uno.capCombustivel = 100;
         uno.consumoCombustivel = 0.2;
+        
+        System.out.println(uno.marca);
+        System.out.println(uno.modelo);
+
+        uno.exibitAutonomia();
     }
     
 }
