@@ -1,10 +1,11 @@
 package ExerciciosAula27.Aluno;
 
-public class aluno {
-    String Aluno;
+public class Aluno {
+
     String nome;
     int matricula;
-    String curso;
-    String [][] disciplina; 
+    String nomeCurso;
+    String [] nomeDisciplinas;
+    String [] [] notasDisciplinas; 
     
 }
