@@ -24,11 +24,29 @@ public class Exer4 {
                 System.out.println("Vez do jogador 2 - escolha linha e coluna para jogar(1-3)");
                 sinal = 'o';
             }
+            linha = valor("linha", scan);
+            coluna = valor("Coluna", scan);
+
+            jogodavelha.validarJogada(linha, coluna, sinal);
+
+            jogodavelha.imprimitTabuleiro();
+
+            if (jogodavelha.verificarGanhador('X')) {
+                ganhou = true;
+                System.out.println("Parabens, ganhador 1 ganhou");
+            } else if (jogodavelha.verificarGanhador('0')) {
+                ganhou = true;
+                System.out.println("Parabens, ganhador 2 ganhou");
+
+            } else if (jogodavelha.jogada > 9) {
+                ganhou = true;
+                System.out.println("O Jogo acabou, ninguem ganhou");
+            }
         }
 
     }
 
-    int valor(String tipoValor, Scanner scan) {
+    static int valor(String tipoValor, Scanner scan) {
         int valor = 0;
         boolean valorValida = false;
         while (!valorValida) {
@@ -40,6 +58,7 @@ public class Exer4 {
                 System.out.println("entrava Inválida, tente novamente");
             }
         }
+        valor--;
         return valor;
     }
 
