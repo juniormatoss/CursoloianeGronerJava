@@ -39,9 +39,8 @@ public class JogoDaVelha {
                 (jogoDaVelha[0][0] == sinal && jogoDaVelha[1][1] == sinal && jogoDaVelha[2][2] == sinal) || // diagonal1
                 (jogoDaVelha[2][0] == sinal && jogoDaVelha[1][1] == sinal && jogoDaVelha[0][2] == sinal)) { // diagonal2
             return true;
-        }else{
-            return false;
         }
+        return false;
     }
 
 
