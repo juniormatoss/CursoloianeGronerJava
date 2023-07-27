@@ -2,15 +2,22 @@ package ExerciciosAula27.JogoDaVelha;
 
 import java.util.Scanner;
 
-public class JogoDaVelhaTest {
+public class Exer4 {
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+
+    }
+
+}
+
 
         boolean ganhou = false;
         char sinal;
         int linha = 0;
         int coluna = 0;
 
-        Scanner scan = new Scanner(System.in);
+        
 
         JogoDaVelha jogodavelha = new JogoDaVelha();
 
@@ -44,6 +51,3 @@ public class JogoDaVelhaTest {
         }
         return valor;
     
-    }
-
-}
