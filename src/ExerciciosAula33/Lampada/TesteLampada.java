@@ -14,11 +14,11 @@ public class TesteLampada {
             System.out.println("Quer ligar a lâmpada? (S) ou (N)");
             String ligar = scan.nextLine();
             System.out.println();
-            if(ligar == "S"){
+            if(ligar.equals("s")){
                 lampada.ligar();
                 sair = true;
             }
-            else if(ligar == "N"){
+            else if(ligar.equals("n")){
                 lampada.desligada();
                 sair = true;
             }else{
