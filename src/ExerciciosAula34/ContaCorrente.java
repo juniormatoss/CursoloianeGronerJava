@@ -5,7 +5,6 @@ public class ContaCorrente {
     private Double numero;
     private Double saldo;
     private boolean especial;
-
     private Double limite;
 
     public ContaCorrente(Double numero, Double saldo, boolean especial, Double limite) {
@@ -51,9 +50,26 @@ public class ContaCorrente {
         this.limite = limite;
     }
 
-    public void sacar(double valor) {
+    public boolean sacar(double valor, boolean especial) {
         if (valor <= (this.saldo)) {
             System.out.println("Saque aceito");
+            saldo = saldo - valor;
+            return true;
+        } else {
+            if (especial == true) {
+                double limites = limite + saldo;
+                if (limites >= valor) {
+                    System.out.println("Saque aceito");
+                    return true;
+                } else {
+                    System.out.println("Saldo insuficiente");
+                    return false;
+                }
+            }else{
+                System.out.println("Saldo insuficiente");
+                return false;
+            }
+
         }
 
     }
