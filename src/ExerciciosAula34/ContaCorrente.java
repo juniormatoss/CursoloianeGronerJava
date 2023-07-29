@@ -76,5 +76,16 @@ public class ContaCorrente {
     public void depositar(double quantia){
         saldo = saldo + quantia;
     }
+    public Double consultarSaldo(){
+        return this.saldo;
+    }
+    public boolean consultarChequeEspecial(){
+        if(saldo < 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
 
 }
