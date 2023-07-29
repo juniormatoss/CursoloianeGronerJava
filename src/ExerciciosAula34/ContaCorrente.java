@@ -73,5 +73,8 @@ public class ContaCorrente {
         }
 
     }
+    public void depositar(double quantia){
+        saldo = saldo + quantia;
+    }
 
 }
