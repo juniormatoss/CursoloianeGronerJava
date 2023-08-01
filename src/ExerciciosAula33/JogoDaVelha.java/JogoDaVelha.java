@@ -1,7 +1,29 @@
 public class JogoDaVelha {
 
-    char[][] jogoDaVelha = new char[3][3];
-    int jogada = 1;
+    private char[][] jogoDaVelha;
+    
+
+    private int jogada;
+
+    public JogoDaVelha(){
+        jogoDaVelha = new char[3][3];
+        int jogada = 1;
+    }
+
+    public char[][] getJogoDaVelha() {
+        return jogoDaVelha;
+    }
+
+    public void setJogoDaVelha(char[][] jogoDaVelha) {
+        this.jogoDaVelha = jogoDaVelha;
+    }
+    public int getJogada() {
+        return jogada;
+    }
+
+    public void setJogada(int jogada) {
+        this.jogada = jogada;
+    }
 
     public boolean validarJogada(int linha, int coluna, char sinal) {
         if (jogoDaVelha[linha][coluna] == 'X' || jogoDaVelha[linha][coluna] == 'O' || jogoDaVelha[linha][coluna] == 'x'
