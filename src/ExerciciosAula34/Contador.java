@@ -2,17 +2,18 @@ package ExerciciosAula34;
 
 public class Contador{
     
-   static int cont;
+   private static int cont;
+public Object incrementar;
 
 
     public void Zerar(){
         cont = 0;
     }
 
-    public void incrementar(int numero){
-        cont = cont + numero;
+    public void incrementar(){
+        cont ++;
     }
-    public int getCont(){
+    public int obterValor(){
         return this.cont;
     }
 
