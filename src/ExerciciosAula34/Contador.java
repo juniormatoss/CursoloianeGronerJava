@@ -16,6 +16,11 @@ public class Contador{
         this.formacao = formacao;
         this.conhecimentoTecnico = conhecimentoTecnico;
     }
+    public Contador(String nome, string idade){
+        this.nome = nome;
+        this.idade = idade;
+        
+    }
     public Contador(){
         
     }
@@ -46,6 +51,8 @@ public class Contador{
     public String getConhecimentoTecnico() {
         return conhecimentoTecnico;
     }
+
+
     public void setConhecimentoTecnico(String conhecimentoTecnico) {
         this.conhecimentoTecnico = conhecimentoTecnico;
     }
