@@ -16,7 +16,7 @@ public class Contador{
         this.formacao = formacao;
         this.conhecimentoTecnico = conhecimentoTecnico;
     }
-    public Contador(String nome, string idade){
+    public Contador(String nome, int idade){
         this.nome = nome;
         this.idade = idade;
         
@@ -33,7 +33,7 @@ public class Contador{
     public String getFuncao(){
         return this.funcao;
     }
-    public void setFuncao(){
+    public void setFuncao(String funcao){
         this.funcao = funcao;
     }
     public int getIdade() {
@@ -55,6 +55,10 @@ public class Contador{
 
     public void setConhecimentoTecnico(String conhecimentoTecnico) {
         this.conhecimentoTecnico = conhecimentoTecnico;
+    }
+
+    public String zerar(){
+        Contador = 0;
     }
 
 
