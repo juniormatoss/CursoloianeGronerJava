@@ -22,4 +22,10 @@ public class Calculadora {
         return Math.pow(num1, num2);
 
     }
+
+    public void Multiplicar(int i, int j) {
+    }
+
+    public void Dividir(int i, int j) {
+    }
 }
