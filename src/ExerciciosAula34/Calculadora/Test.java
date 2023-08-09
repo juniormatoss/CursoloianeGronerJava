@@ -5,7 +5,7 @@ public class Test {
         Calculadora calculadora = new Calculadora();
 
     calculadora.somar(10, 15);
-
+    calculadora.Dividir(5, 5);
     System.out.println(calculadora.somar);
 }
 
