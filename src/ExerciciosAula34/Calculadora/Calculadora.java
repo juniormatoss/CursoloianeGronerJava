@@ -29,9 +29,9 @@ public class Calculadora {
     public void Dividir(int i, int j) {
     }
     public int Fatorial(int numero){
-        int  calcular = 0;
+        int  calcular = 1;
 
-        for (int i = 0; i < numero; i++){
+        for (int i = numero; i > numero; i--){
             calcular = calcular * 1;
         }
         return calcular;
