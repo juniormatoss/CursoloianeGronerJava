@@ -2,10 +2,21 @@ package ExerciciosAula36;
 
 public class Agenda {
     
-    public String nome;
+    private String nome;
     public Contato [] contatos;
 
 
-    public 
-    
+    public String nome(){
+        return this.nome;
+    }
+    public void nome(String nome){
+        this.nome = nome;
+    }
+
+    public Agenda(){
+
+    }
+    public Agenda(String nome){
+        this.nome = nome;
+    }
 }
