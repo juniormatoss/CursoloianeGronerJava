@@ -12,11 +12,18 @@ public class Agenda {
     public void nome(String nome){
         this.nome = nome;
     }
-
+    
+    public Contato[] getContatos() {
+        return contatos;
+    }
+    public void setContatos(Contato[] contatos) {
+        this.contatos = contatos;
+    }
     public Agenda(){
 
     }
     public Agenda(String nome){
         this.nome = nome;
     }
+
 }
