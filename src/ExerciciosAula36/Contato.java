@@ -25,14 +25,12 @@ public class Contato {
     public void setEmail(String email) {
         this.email = email;
     }
-    public Contato (String nome){
-        this.nome = nome;
+
+    public String obertInformacoes(){
+        return "Mome " + nome + "Telefone " + telefone + "Email " + email;
     }
-    public Contato(String nome, int telefone, String email) {
-        this.nome = nome;
-        this.telefone = telefone;
-        this.email = email;
-    }
+   
+    
     
 
 
