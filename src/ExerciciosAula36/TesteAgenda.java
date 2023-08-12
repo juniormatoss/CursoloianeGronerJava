@@ -31,7 +31,10 @@ public class TesteAgenda {
             contatos[i] = c;
         }
         agenda.setContatos(contatos);
+        if(agenda != null){
+            System.out.println(agenda.obterinformacoes());
 
+        }
         
     }
     
