@@ -32,6 +32,8 @@ public class TesteAgenda {
         }
         agenda.setContatos(contatos);
         if(agenda != null){
+
+            
             
             System.out.println(agenda.obterinformacoes());
 
