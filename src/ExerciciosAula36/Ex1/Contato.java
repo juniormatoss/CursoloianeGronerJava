@@ -1,4 +1,4 @@
-package ExerciciosAula36;
+package ExerciciosAula36.Ex1;
 
 public class Contato {
 
