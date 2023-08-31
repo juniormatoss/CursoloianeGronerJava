@@ -25,8 +25,6 @@ public class Exero2 {
         curso.setNome(nome);
         curso.setHorario(horario);
 
-
-        
         Professor professor = new Professor();
         professor.setNome(nomeProf);
         professor.setEmail(emailProf);
@@ -35,29 +33,29 @@ public class Exero2 {
         curso.setProfessor(professor);
 
         System.out.println("-----Alunos-----");
-        
-        Aluno [] alunos = new Aluno[5];
-        for (int i = 0; i < 4; i++){
 
-            System.out.println("Digite o nome do aluno" + (i+1));
+        Aluno[] alunos = new Aluno[5];
+        for (int i = 0; i < 4; i++) {
+
+            System.out.println("Digite o nome do aluno" + (i + 1));
             String nomeAluno = scan.nextLine();
             System.out.println("Digite a matricula do aluno");
             double matAluno = scan.nextDouble();
-            double notasAluno [] = new double [4];
-            for (int j = 0; i < 4; j++){
-                System.out.println("Digite a nota do aluno" + (j+1));
+            double notasAluno[] = new double[4];
+            for (int j = 0; i < 4; j++) {
+                System.out.println("Digite a nota do aluno" + (j + 1));
                 notasAluno[j] = scan.nextDouble();
-             }
-        Aluno aluno = new Aluno();
-        aluno.setNome(nomeAluno);
-        aluno.setMatricula(matAluno);
-        aluno.setNotas(notasAluno);
+            }
+            Aluno aluno = new Aluno();
+            aluno.setNome(nomeAluno);
+            aluno.setMatricula(matAluno);
+            aluno.setNotas(notasAluno);
+
+            alunos[i] = aluno;
         }
 
         curso.setAluno(alunos);
-        
-
-
+        System.out.println(curso.obterInfo());
 
     }
 }
