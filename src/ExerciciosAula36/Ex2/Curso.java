@@ -31,4 +31,29 @@ public class Curso {
     public void setAluno(Aluno[] aluno) {
         this.aluno = aluno;
     }
+    public String obterInfo(){
+        String info = "Nome do curso = " + nome + "\n";
+        if(professor != null){
+            info += professor.obterInfo();
+        }
+        if(aluno != null){
+            System.out.println("--- Alunos ---");
+            for(Aluno aluno : aluno){
+                if (aluno != null){
+                    info += aluno.obterInfo();
+                }
+            }
+        }
+        return info;
+
+    }
+    public double obterMediaTurma(){
+        double soma = 0;
+        for(Aluno aluno : aluno){
+            if (aluno != null){
+                soma += aluno.obterMedia();
+            }   
+        }
+        return soma/aluno.length;
+    }
 }

@@ -49,5 +49,13 @@ public class Aluno {
         }
         return info;
     }
+    public double obterMedia(){
+        double soma = 0;
+        for(double nota: notas){
+            soma += nota;
+        }
+        return soma/4;
+    }
+
 
 }
